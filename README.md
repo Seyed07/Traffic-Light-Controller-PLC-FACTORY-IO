@@ -7,6 +7,8 @@ This project implements a Traffic Light Control System for a four-way intersecti
 - **Stage 2 (7 seconds):** Both Traffic Lights 1 and 2 turn Yellow.
 - **Stage 3 (20 seconds):** Traffic Light 1 is Red, and Traffic Light 2 is Green.
 
+![traffic light](images/sample.png)
+
 ## Traffic Light Control Logic and Timer Sequence
 
 The system begins when the Start button is pressed, turning on the Start light and turning off the Stop light. The Start button also sets the memory bit to 1, activating the timer. The timer then starts counting, and its output remains at 1 for 20 seconds, holding the output high for the specified duration. This is achieved using a PEXT timer (extended timer), which, when activated, holds the output high for a specified period (TV seconds) and then sets the output to 0 after the set time.
